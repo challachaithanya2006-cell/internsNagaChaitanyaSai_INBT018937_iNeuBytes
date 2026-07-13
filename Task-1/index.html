@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CuraLife — Premium Healthcare & Clinic | Your Health, Our Lifelong Commitment</title>
+<meta name="description" content="CuraLife is a modern multi-specialty clinic offering cardiology, neurology, pediatrics, orthopedics, dermatology and dental care — board-certified doctors, real human care, appointments in minutes.">
+<meta name="author" content="CuraLife">
+<meta name="theme-color" content="#047857">
+<meta property="og:title" content="CuraLife — Your Health, Our Lifelong Commitment">
+<meta property="og:description" content="A modern multi-specialty clinic — expert doctors, real human care, appointments in minutes.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="CuraLife">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "CuraLife",
+  "description": "Modern multi-specialty clinic offering cardiology, neurology, pediatrics, orthopedics, dermatology and dental care.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "12-34, MG Road, Governorpet",
+    "addressLocality": "Vijayawada",
+    "addressRegion": "Andhra Pradesh",
+    "postalCode": "520002",
+    "addressCountry": "IN"
+  },
+  "telephone": "+91-98765-43210",
+  "email": "care@curalife.com",
+  "openingHours": "Mo-Sa 08:00-20:00"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- Icon sprite: every symbol below is referenced at least once in the page -->
+<svg class="icon-sprite" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="icon-logo-mark" viewBox="0 0 40 40">
+      <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#10B981"/>
+        <stop offset="100%" stop-color="#047857"/>
+      </linearGradient>
+      <rect width="40" height="40" rx="12" fill="url(#logoGrad)"/>
+      <path d="M6 21h5l2.6-7 4 14 2.6-9.5 2 2.5h9.8" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-heart-line" viewBox="0 0 24 24">
+      <path d="M12 21s-7.5-4.7-10-9.3C.5 8.4 2.4 5 6 5c2 0 3.4 1 4.5 2.3C11.6 6 13 5 15 5c3.6 0 5.5 3.4 4 6.7C19.5 16.3 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-neuro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <line x1="6" y1="17" x2="12" y2="7"/><line x1="12" y1="7" x2="18" y2="17"/><line x1="6" y1="17" x2="18" y2="17"/><line x1="12" y1="7" x2="12" y2="17"/>
+      <circle cx="12" cy="7" r="1.8" fill="currentColor" stroke="none"/><circle cx="6" cy="17" r="1.8" fill="currentColor" stroke="none"/><circle cx="18" cy="17" r="1.8" fill="currentColor" stroke="none"/><circle cx="12" cy="17" r="1.8" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-baby" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="13.5" r="7"/><circle cx="9.3" cy="12.5" r="0.9" fill="currentColor" stroke="none"/><circle cx="14.7" cy="12.5" r="0.9" fill="currentColor" stroke="none"/><path d="M9 16.5c1 1.2 5 1.2 6 0"/>
+    </symbol>
+    <symbol id="icon-bone" viewBox="0 0 24 24">
+      <rect x="7" y="10.4" width="10" height="3.2" rx="1.6"/><circle cx="6" cy="9" r="2.3"/><circle cx="6" cy="15" r="2.3"/><circle cx="18" cy="9" r="2.3"/><circle cx="18" cy="15" r="2.3"/>
+    </symbol>
+    <symbol id="icon-droplet" viewBox="0 0 24 24">
+      <path d="M12 3C12 3 5.5 11 5.5 15.5C5.5 19.09 8.41 22 12 22C15.59 22 18.5 19.09 18.5 15.5C18.5 11 12 3 12 3Z"/>
+    </symbol>
+    <symbol id="icon-tooth" viewBox="0 0 24 24">
+      <path d="M12 3C9 3 6.5 5 6.5 8.2C6.5 10 7 11 7 13.5C7 16.5 7.8 20 9.3 20.8C10.5 21.4 10.8 18.5 12 18.5C13.2 18.5 13.5 21.4 14.7 20.8C16.2 20 17 16.5 17 13.5C17 11 17.5 10 17.5 8.2C17.5 5 15 3 12 3Z"/>
+    </symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9.2"/><path d="M8 12.3l2.6 2.6L16.2 9" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12.5l5 5L20 7"/>
+    </symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="16" rx="2.2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/>
+    </symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 16,14"/>
+    </symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 22s7-7.58 7-12.5C19 5.36 15.87 2 12 2S5 5.36 5 9.5C5 14.42 12 22 12 22z"/><circle cx="12" cy="9.5" r="2.4"/>
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2.2"/><polyline points="3.5,6.5 12,13 20.5,6.5"/>
+    </symbol>
+    <symbol id="icon-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6,9 12,15 18,9"/>
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15,6 9,12 15,18"/>
+    </symbol>
+    <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9,6 15,12 9,18"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="4" y1="12" x2="18" y2="12"/><polyline points="12,6 18,12 12,18"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"/><polyline points="6,11 12,5 18,11"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.6 7-6.2-3.8-6.2 3.8 1.6-7-5.4-4.7 7.1-.6z"/>
+    </symbol>
+    <symbol id="icon-quote" viewBox="0 0 24 24">
+      <path d="M7 8c-2.2 0-4 1.8-4 4v5h5v-5H6c0-1.1.9-2 2-2V8zm10 0c-2.2 0-4 1.8-4 4v5h5v-5h-2c0-1.1.9-2 2-2V8z"/>
+    </symbol>
+    <symbol id="icon-shield-check" viewBox="0 0 24 24">
+      <path d="M12 2l8 3v6c0 5-3.4 8.6-8 11-4.6-2.4-8-6-8-11V5l8-3z"/><path d="M8.3 12.3l2.6 2.6L16 9.5" fill="none" stroke="#FFFFFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="5"/><path d="M9 12.5L7 21l5-3 5 3-2-8.5"/>
+    </symbol>
+    <symbol id="icon-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="2,12 7.5,12 9.5,5.5 14,18.5 16.5,12 22,12"/>
+    </symbol>
+    <symbol id="icon-person" viewBox="0 0 24 24">
+      <circle cx="12" cy="8.5" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+    </symbol>
+    <symbol id="icon-stethoscope" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 13v2a5 5 0 0 0 10 0v-2.5"/><circle cx="19" cy="9.5" r="1.8"/>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M14 9.2h3V5.7h-3c-2.4 0-4.3 1.9-4.3 4.3v2.2H7v3.5h2.7V21h3.5v-5.3H16l.7-3.5h-3.5v-1.8c0-.4.3-.7.7-.7z"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="0.6" fill="currentColor"/>
+    </symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round">
+      <line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8.3" r="0.9" fill="currentColor" stroke="none"/><line x1="8" y1="11.3" x2="8" y2="17.5"/><path d="M12 17.5v-3.8c0-1.5 1.1-2.6 2.6-2.6s2.6 1.1 2.6 2.6v3.8"/><line x1="12" y1="11.3" x2="12" y2="17.5"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__container">
+    <a href="#home" class="navbar__brand" aria-label="CuraLife home">
+      <svg class="navbar__logo" aria-hidden="true"><use href="#icon-logo-mark"></use></svg>
+      <span class="navbar__name">Cura<span class="text-accent-word">Life</span></span>
+    </a>
+
+    <nav class="navbar__menu" id="navMenu" aria-label="Primary">
+      <a href="#home" class="navbar__link">Home</a>
+      <a href="#about" class="navbar__link">About</a>
+      <a href="#services" class="navbar__link">Services</a>
+      <a href="#doctors" class="navbar__link">Doctors</a>
+      <a href="#testimonials" class="navbar__link">Testimonials</a>
+      <a href="#faq" class="navbar__link">FAQ</a>
+      <a href="#contact" class="navbar__link">Contact</a>
+      <a href="#appointment" class="btn btn--primary btn--sm navbar__menu-cta">Book Appointment</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <a href="#appointment" class="btn btn--primary btn--sm navbar__cta">Book Appointment</a>
+      <button class="navbar__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO — Why CuraLife? ============ -->
+  <section class="hero" id="home">
+    <div class="container hero__container">
+      <div class="hero__content">
+        <p class="hero__badge reveal" data-reveal>
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#icon-star"></use></svg>
+          Rated 4.9/5 by over 12,000 patients
+        </p>
+
+        <h1 class="hero__title reveal" data-reveal>
+          Your Health, Our <span class="text-gradient">Lifelong Commitment</span>
+        </h1>
+
+        <p class="hero__subtitle reveal" data-reveal>
+          CuraLife pairs board-certified specialists with modern diagnostics and a genuinely human touch — so every visit feels considered, unhurried, and built around you.
+        </p>
+
+        <div class="hero__actions reveal" data-reveal>
+          <a href="#appointment" class="btn btn--primary">
+            Book an Appointment
+            <svg class="icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </a>
+          <a href="#services" class="btn btn--outline">Explore Services</a>
+        </div>
+
+        <div class="hero__stats reveal" data-reveal>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="50000" data-suffix="+">0</span>
+            <span class="hero__stat-label">Happy Patients</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="120" data-suffix="+">0</span>
+            <span class="hero__stat-label">Expert Doctors</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number" data-count="18" data-suffix="+">0</span>
+            <span class="hero__stat-label">Years of Care</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <svg class="hero__illustration" viewBox="0 0 440 440" role="img" aria-label="Illustration of a heartbeat pulse, representing compassionate healthcare">
+          <defs>
+            <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#34D399"/>
+              <stop offset="100%" stop-color="#047857"/>
+            </linearGradient>
+          </defs>
+          <rect x="90" y="90" width="260" height="260" rx="56" fill="url(#shieldGrad)"/>
+          <polyline points="118,222 158,222 176,182 202,262 226,150 246,222 322,222" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <div class="hero__card reveal" data-reveal>
+          <span class="hero__card-icon">
+            <svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
+          </span>
+          <span class="hero__card-text">
+            <strong>Appointment Confirmed</strong>
+            <small>Dr. Ananya Sharma · Today, 4:30 PM</small>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT — Who are we? ============ -->
+  <section class="about section" id="about">
+    <div class="container about__grid">
+      <div class="about__visual reveal" data-reveal>
+        <div class="about__panel">
+          <span class="about__panel-number">18+</span>
+          <span class="about__panel-label">Years of Trusted Care</span>
+        </div>
+        <div class="about__badge">
+          <svg class="icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg>
+          NABH Accredited
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="eyebrow reveal" data-reveal>About CuraLife</p>
+        <h2 class="section-title reveal" data-reveal>Healthcare That Feels Human Again</h2>
+        <p class="reveal" data-reveal>
+          CuraLife is a multi-specialty clinic built around a simple idea: a visit to the doctor should feel like time well spent, not time endured. Our specialists combine rigorous medical expertise with the kind of unhurried attention that makes people actually want to take care of themselves.
+        </p>
+        <p class="reveal" data-reveal>
+          From your first consultation to your last follow-up, every part of your journey is designed around clarity, comfort, and care that doesn't stop at the prescription pad.
+        </p>
+
+        <ul class="about__credentials reveal" data-reveal>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>NABH accredited facility</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>24/7 emergency response</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg>Cashless insurance support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES — What do we offer? ============ -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>Our Specialties</p>
+        <h2 class="section-title reveal" data-reveal>Comprehensive Care, Under One Roof</h2>
+        <p class="section-desc reveal" data-reveal>Six core specialties, one connected care team — so your health history never has to start over.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-heart-line"></use></svg></div>
+          <h3 class="service-card__title">Cardiology</h3>
+          <p class="service-card__desc">Comprehensive heart screenings, rhythm management, and preventive cardiac care.</p>
+        </article>
+
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-neuro"></use></svg></div>
+          <h3 class="service-card__title">Neurology</h3>
+          <p class="service-card__desc">Advanced diagnostics and personalised treatment for migraines, seizures, and neurological conditions.</p>
+        </article>
+
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-baby"></use></svg></div>
+          <h3 class="service-card__title">Pediatrics</h3>
+          <p class="service-card__desc">Gentle, thorough care for your little ones, from check-ups to childhood immunisations.</p>
+        </article>
+
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-bone"></use></svg></div>
+          <h3 class="service-card__title">Orthopedics</h3>
+          <p class="service-card__desc">From sports injuries to joint replacements, get back to doing what you love, pain-free.</p>
+        </article>
+
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-droplet"></use></svg></div>
+          <h3 class="service-card__title">Dermatology</h3>
+          <p class="service-card__desc">Medical and cosmetic skin care backed by science, tailored to every skin type.</p>
+        </article>
+
+        <article class="service-card reveal" data-reveal>
+          <div class="service-card__icon"><svg class="icon" aria-hidden="true"><use href="#icon-tooth"></use></svg></div>
+          <h3 class="service-card__title">Dental Care</h3>
+          <p class="service-card__desc">Complete oral health services, from routine cleanings to restorative dentistry.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY CHOOSE US ============ -->
+  <section class="why section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>Why CuraLife</p>
+        <h2 class="section-title reveal" data-reveal>Care That Goes Beyond the Checkup</h2>
+      </div>
+
+      <ul class="why__list">
+        <li class="why__item reveal" data-reveal>
+          <span class="why__item-icon"><svg class="icon" aria-hidden="true"><use href="#icon-award"></use></svg></span>
+          <div>
+            <h3>Board-Certified Specialists</h3>
+            <p>Every physician is vetted for clinical expertise and genuine bedside empathy.</p>
+          </div>
+        </li>
+        <li class="why__item reveal" data-reveal>
+          <span class="why__item-icon"><svg class="icon" aria-hidden="true"><use href="#icon-calendar"></use></svg></span>
+          <div>
+            <h3>Same-Week Appointments</h3>
+            <p>No three-week waits for a ten-minute answer — book and get seen, fast.</p>
+          </div>
+        </li>
+        <li class="why__item reveal" data-reveal>
+          <span class="why__item-icon"><svg class="icon" aria-hidden="true"><use href="#icon-shield-check"></use></svg></span>
+          <div>
+            <h3>Transparent Pricing</h3>
+            <p>Know your costs before you commit to care — no surprise line items.</p>
+          </div>
+        </li>
+        <li class="why__item reveal" data-reveal>
+          <span class="why__item-icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
+          <div>
+            <h3>24/7 Emergency Support</h3>
+            <p>A real person, not a hold queue, answers when it matters most.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ DOCTORS — Who will treat me? ============ -->
+  <section class="doctors section section--alt" id="doctors">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>Our Team</p>
+        <h2 class="section-title reveal" data-reveal>Meet the Specialists Behind Your Care</h2>
+      </div>
+
+      <div class="doctor-grid">
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--1"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>4.9</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Ananya Sharma</h3>
+          <p class="doctor-card__specialty">Cardiologist</p>
+          <p class="doctor-card__meta">12+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Ananya Sharma" data-book-department="Cardiology">Book Appointment</button>
+        </article>
+
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--2"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>4.8</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Rohan Mehta</h3>
+          <p class="doctor-card__specialty">Neurologist</p>
+          <p class="doctor-card__meta">15+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Rohan Mehta" data-book-department="Neurology">Book Appointment</button>
+        </article>
+
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--3"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>5.0</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Kavya Reddy</h3>
+          <p class="doctor-card__specialty">Pediatrician</p>
+          <p class="doctor-card__meta">9+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Kavya Reddy" data-book-department="Pediatrics">Book Appointment</button>
+        </article>
+
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--4"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>4.9</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Arjun Nair</h3>
+          <p class="doctor-card__specialty">Orthopedic Surgeon</p>
+          <p class="doctor-card__meta">14+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Arjun Nair" data-book-department="Orthopedics">Book Appointment</button>
+        </article>
+
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--5"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>4.8</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Sneha Patil</h3>
+          <p class="doctor-card__specialty">Dermatologist</p>
+          <p class="doctor-card__meta">10+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Sneha Patil" data-book-department="Dermatology">Book Appointment</button>
+        </article>
+
+        <article class="doctor-card reveal" data-reveal>
+          <div class="doctor-card__avatar-wrap">
+            <div class="doctor-card__avatar doctor-card__avatar--6"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></div>
+            <span class="doctor-card__rating"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg>4.9</span>
+          </div>
+          <h3 class="doctor-card__name">Dr. Vivek Iyer</h3>
+          <p class="doctor-card__specialty">Dental Surgeon</p>
+          <p class="doctor-card__meta">11+ yrs experience</p>
+          <button type="button" class="btn btn--outline btn--sm doctor-card__btn" data-book-doctor="Dr. Vivek Iyer" data-book-department="Dental Care">Book Appointment</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATISTICS ============ -->
+  <section class="stats section">
+    <div class="container stats__grid">
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__icon"><svg class="icon" aria-hidden="true"><use href="#icon-stethoscope"></use></svg></span>
+        <span class="stats__number" data-count="99" data-suffix="%">0</span>
+        <span class="stats__label">Patient Satisfaction</span>
+      </div>
+      <div class="stats__item reveal" data-reveal>
+        <span class="stats__icon"><svg class="icon" aria-hidden="true"><use href="#icon-activity"></use></svg></span>
+        <span class="stats__number" data-count="4.9" data-decimal="1" data-suffix="/5">0</span>
+        <span class="stats__label">Average Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPOINTMENT — How do I book? ============ -->
+  <section class="appointment section section--alt" id="appointment">
+    <div class="container appointment__grid">
+      <div class="appointment__info reveal" data-reveal>
+        <p class="eyebrow">Book a Visit</p>
+        <h2 class="section-title">Schedule Your Appointment in Minutes</h2>
+        <p class="appointment__desc">Fill in a few details and our care coordinators will confirm your slot. Prefer to speak with someone first? We're one call away.</p>
+
+        <ul class="appointment__info-list">
+          <li>
+            <span class="appointment__info-icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
+            <div><strong>Call to book</strong><span>+91 98765 43210</span></div>
+          </li>
+          <li>
+            <span class="appointment__info-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg></span>
+            <div><strong>Response time</strong><span>We confirm within 24 hours</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="appointment__form-wrap reveal" data-reveal>
+        <form class="form" id="appointmentForm" novalidate>
+
+          <div class="form__success" id="formSuccess" role="status" aria-live="polite" hidden>
+            <span class="form__success-icon"><svg class="icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg></span>
+            <h3>Appointment Request Sent!</h3>
+            <p>Thank you — our care team will confirm your slot by phone or email within 24 hours.</p>
+            <button type="button" class="btn btn--outline btn--sm" id="bookAnotherBtn">Book Another Appointment</button>
+          </div>
+
+          <div class="form__body" id="formBody">
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="fullName">Full Name <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="text" id="fullName" name="fullName" placeholder="e.g. Priya Desai" required>
+                <span class="form__error" id="err-fullName"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="you@example.com" required>
+                <span class="form__error" id="err-email"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="10-digit mobile number" required>
+                <span class="form__error" id="err-phone"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="date">Preferred Date <span aria-hidden="true">*</span></label>
+                <input class="form__input" type="date" id="date" name="date" required>
+                <span class="form__error" id="err-date"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="department">Department <span aria-hidden="true">*</span></label>
+                <div class="form__select-wrap">
+                  <select class="form__select" id="department" name="department" required>
+                    <option value="" selected disabled>Select a department</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="Dental Care">Dental Care</option>
+                  </select>
+                  <svg class="icon form__select-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <span class="form__error" id="err-department"></span>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="doctor">Preferred Doctor <span aria-hidden="true">*</span></label>
+                <div class="form__select-wrap">
+                  <select class="form__select" id="doctor" name="doctor" required disabled>
+                    <option value="" selected>Select a department first</option>
+                  </select>
+                  <svg class="icon form__select-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <span class="form__error" id="err-doctor"></span>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Message <span class="form__optional">(optional)</span></label>
+              <textarea class="form__textarea" id="message" name="message" rows="4" placeholder="Tell us briefly what's bringing you in..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">Request Appointment</button>
+            <p class="form__note">By submitting, you agree to be contacted by CuraLife regarding this appointment request.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS — Why trust us? ============ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>Patient Stories</p>
+        <h2 class="section-title reveal" data-reveal>Real Stories, Real Recoveries</h2>
+      </div>
+    </div>
+
+    <div class="testimonial-wrap">
+      <button class="testimonial-arrow testimonial-arrow--prev" id="testPrev" aria-label="Previous testimonial">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chevron-left"></use></svg>
+      </button>
+
+      <div class="testimonial-viewport">
+        <div class="testimonial-track" id="testimonialTrack">
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <svg class="icon testimonial-quote-icon" aria-hidden="true"><use href="#icon-quote"></use></svg>
+              <div class="testimonial-rating" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">The care team treated me like family, not a chart number. My cardiologist called to check in after my procedure — I didn't expect that.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></span>
+                <div><strong>Priya Desai</strong><span>Cardiology Patient</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <svg class="icon testimonial-quote-icon" aria-hidden="true"><use href="#icon-quote"></use></svg>
+              <div class="testimonial-rating" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">Our daughter used to dread check-ups. Dr. Reddy made it feel like playtime — she now asks when her "next doctor visit" is.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></span>
+                <div><strong>Suresh Kumar</strong><span>Pediatrics Patient's Parent</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <svg class="icon testimonial-quote-icon" aria-hidden="true"><use href="#icon-quote"></use></svg>
+              <div class="testimonial-rating" aria-label="Rated 4 out of 5 stars">★★★★☆</div>
+              <p class="testimonial-text">Six months after knee surgery, I'm back to my morning runs. The recovery plan was clear from day one.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></span>
+                <div><strong>Meera Iyer</strong><span>Orthopedics Patient</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <svg class="icon testimonial-quote-icon" aria-hidden="true"><use href="#icon-quote"></use></svg>
+              <div class="testimonial-rating" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">I'd tried three dermatologists before CuraLife. Dr. Patil was the first to actually explain what was happening with my skin.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></span>
+                <div><strong>Vikram Singh</strong><span>Dermatology Patient</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <svg class="icon testimonial-quote-icon" aria-hidden="true"><use href="#icon-quote"></use></svg>
+              <div class="testimonial-rating" aria-label="Rated 5 out of 5 stars">★★★★★</div>
+              <p class="testimonial-text">Booked online at 9 PM, was seen the next afternoon for a root canal I'd been putting off for months.</p>
+              <div class="testimonial-author">
+                <span class="testimonial-avatar"><svg class="icon" aria-hidden="true"><use href="#icon-person"></use></svg></span>
+                <div><strong>Lakshmi Rao</strong><span>Dental Care Patient</span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="testimonial-arrow testimonial-arrow--next" id="testNext" aria-label="Next testimonial">
+        <svg class="icon" aria-hidden="true"><use href="#icon-chevron-right"></use></svg>
+      </button>
+    </div>
+
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section section--alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>FAQ</p>
+        <h2 class="section-title reveal" data-reveal>Questions You Might Have</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal" data-reveal>
+          <button class="faq-question" aria-expanded="false" id="faqQ1" aria-controls="faqA1">
+            <span>Do I need an appointment, or do you accept walk-ins?</span>
+            <svg class="icon faq-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </button>
+          <div class="faq-answer" id="faqA1" role="region" aria-labelledby="faqQ1">
+            <div class="faq-answer__inner">
+              <p>We recommend booking ahead so you're matched with the right specialist, but we keep same-day slots open for urgent, non-emergency concerns.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal>
+          <button class="faq-question" aria-expanded="false" id="faqQ2" aria-controls="faqA2">
+            <span>What insurance providers do you accept?</span>
+            <svg class="icon faq-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </button>
+          <div class="faq-answer" id="faqA2" role="region" aria-labelledby="faqQ2">
+            <div class="faq-answer__inner">
+              <p>CuraLife partners with most major insurance networks, with cashless claims processed on-site. Bring your policy details at check-in.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal>
+          <button class="faq-question" aria-expanded="false" id="faqQ3" aria-controls="faqA3">
+            <span>How should I prepare for my first visit?</span>
+            <svg class="icon faq-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </button>
+          <div class="faq-answer" id="faqA3" role="region" aria-labelledby="faqQ3">
+            <div class="faq-answer__inner">
+              <p>Bring a valid ID, any previous medical records, and a list of current medications. Arriving 15 minutes early gives you time for a short intake form.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal>
+          <button class="faq-question" aria-expanded="false" id="faqQ4" aria-controls="faqA4">
+            <span>What should I do in a medical emergency?</span>
+            <svg class="icon faq-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </button>
+          <div class="faq-answer" id="faqA4" role="region" aria-labelledby="faqQ4">
+            <div class="faq-answer__inner">
+              <p>For life-threatening emergencies, call your local emergency number or go to the nearest emergency room. CuraLife also offers 24/7 phone support for urgent guidance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal" data-reveal>
+          <button class="faq-question" aria-expanded="false" id="faqQ5" aria-controls="faqA5">
+            <span>Can I reschedule or cancel my appointment?</span>
+            <svg class="icon faq-icon" aria-hidden="true"><use href="#icon-chevron-down"></use></svg>
+          </button>
+          <div class="faq-answer" id="faqA5" role="region" aria-labelledby="faqQ5">
+            <div class="faq-answer__inner">
+              <p>Yes. Cancellations made at least 12 hours in advance are free of charge. Call our front desk and we'll rebook you at the next available slot.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT — How do I reach you? ============ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow reveal" data-reveal>Get in Touch</p>
+        <h2 class="section-title reveal" data-reveal>We're Here When You Need Us</h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info reveal" data-reveal>
+          <div class="contact__item">
+            <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg></span>
+            <div>
+              <strong>Address</strong>
+              <address>12-34, MG Road, Governorpet, Vijayawada, Andhra Pradesh 520002</address>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg></span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:care@curalife.com">care@curalife.com</a>
+            </div>
+          </div>
+          <div class="contact__item">
+            <span class="contact__icon"><svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg></span>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon – Sat: 8:00 AM – 8:00 PM<br>Sunday: Emergency Care Only</span>
+            </div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="#" class="contact__social" aria-label="CuraLife on Facebook"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
+            <a href="#" class="contact__social" aria-label="CuraLife on Instagram"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+            <a href="#" class="contact__social" aria-label="CuraLife on X"><svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg></a>
+            <a href="#" class="contact__social" aria-label="CuraLife on LinkedIn"><svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+          </div>
+        </div>
+
+        <div class="contact__map reveal" data-reveal>
+          <div class="map-frame-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=Vijayawada,Andhra+Pradesh,India&t=m&z=13&output=embed"
+              title="CuraLife Clinic Location Map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#home" class="navbar__brand" aria-label="CuraLife home">
+        <svg class="navbar__logo" aria-hidden="true"><use href="#icon-logo-mark"></use></svg>
+        <span class="navbar__name footer__name">Cura<span class="text-accent-word">Life</span></span>
+      </a>
+      <p class="footer__desc">Your Health, Our Lifelong Commitment.</p>
+      <div class="footer__socials">
+        <a href="#" class="contact__social" aria-label="CuraLife on Facebook"><svg class="icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
+        <a href="#" class="contact__social" aria-label="CuraLife on Instagram"><svg class="icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+        <a href="#" class="contact__social" aria-label="CuraLife on X"><svg class="icon" aria-hidden="true"><use href="#icon-x"></use></svg></a>
+        <a href="#" class="contact__social" aria-label="CuraLife on LinkedIn"><svg class="icon" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+      </div>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Quick Links</h3>
+      <ul class="footer__links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Our Doctors</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Contact</h3>
+      <ul class="footer__links footer__links--contact">
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>Governorpet, Vijayawada, AP 520002</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg><a href="tel:+919876543210">+91 98765 43210</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#icon-mail"></use></svg><a href="mailto:care@curalife.com">care@curalife.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> CuraLife. All rights reserved.</p>
+    <div class="footer__legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+</button>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
