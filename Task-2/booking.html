@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Secure clinical appointment booking authorization manifest framework.">
+    <title>Secure Booking Gateway | CareConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="CareConnect Home">
+                <span class="logo-icon">🫀</span>
+                <span class="logo-text">Care<span>Connect</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="doctors.html" class="nav-link">Find Doctors</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="booking-interface-container">
+            <h1>Patient Manifest Authorization</h1>
+            <p class="booking-lead-text">Fill out the clinical intake fields below to securely commit your slot booking down to the system's local data storage tier layers.</p>
+
+            <div class="booking-form-card">
+                <form id="careConnectBookingForm" novalidate>
+                    
+                    <!-- Meta Context Reference Layer (Read Only Autopopulated Metrics) -->
+                    <div class="form-grid-dual" style="background: #F8FAFC; padding: 20px; border-radius: 8px; margin-bottom: 30px; border: 1px dashed #E2E8F0;">
+                        <div class="input-container">
+                            <label>Assigned Medical Practitioner</label>
+                            <input type="text" id="metaDisplayDoctor" readonly style="font-weight: 600; color: var(--dark-primary);">
+                        </div>
+                        <div class="input-container">
+                            <label>Target Medical Department</label>
+                            <input type="text" id="metaDisplayDept" readonly style="font-weight: 600;">
+                        </div>
+                    </div>
+
+                    <!-- Direct Personal Data Inputs Segment -->
+                    <div class="input-container" id="container_patientName">
+                        <label for="patientName">Full Legal Name of Patient *</label>
+                        <input type="text" id="patientName" placeholder="Ex: Rahul Challa">
+                        <span class="validation-error-ui">Legal name signature manifest is required.</span>
+                    </div>
+
+                    <div class="form-grid-dual">
+                        <div class="input-container" id="container_patientEmail">
+                            <label for="patientEmail">Secure Routing Email *</label>
+                            <input type="email" id="patientEmail" placeholder="rahul@example.com">
+                            <span class="validation-error-ui">Provide a valid structural email sequence.</span>
+                        </div>
+                        <div class="input-container" id="container_patientPhone">
+                            <label for="patientPhone">Contact Phone Core Network Number *</label>
+                            <input type="tel" id="patientPhone" placeholder="Ex: 9876543210">
+                            <span class="validation-error-ui">Requires a valid 10-digit primary network number.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-dual">
+                        <div class="input-container" id="container_patientAge">
+                            <label for="patientAge">Chronological Age *</label>
+                            <input type="number" id="patientAge" placeholder="Min: 1, Max: 125" min="1" max="125">
+                            <span class="validation-error-ui">Provide an age value between 1 and 125 years.</span>
+                        </div>
+                        <div class="input-container" id="container_patientGender">
+                            <label for="patientGender">Physiological Gender Mapping *</label>
+                            <select id="patientGender">
+                                <option value="">Select Identity Mapping</option>
+                                <option value="Male">Male Identification Track</option>
+                                <option value="Female">Female Identification Track</option>
+                                <option value="Non-Binary">Non-Binary Specification</option>
+                                <option value="Declined">Decline Structural Mapping</option>
+                            </select>
+                            <span class="validation-error-ui">Isolate a structural identity category choice.</span>
+                        </div>
+                    </div>
+
+                    <div class="form-grid-dual">
+                        <div class="input-container" id="container_bookingDate">
+                            <label for="bookingDate">Target Operational Date *</label>
+                            <input type="date" id="bookingDate">
+                            <span class="validation-error-ui">Isolate a chronological date set inside forward horizons.</span>
+                        </div>
+                        <div class="input-container" id="container_bookingSlot">
+                            <label for="bookingSlot">Synchronized Allocation Window Slot *</label>
+                            <input type="text" id="bookingSlot" readonly style="background-color: #F1F5F9; font-weight: 600;">
+                            <span class="validation-error-ui">Time slot cross-mapping parameters missing.</span>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <label for="patientMessage">Clinical Symptoms & Pathological Overview (Optional)</label>
+                        <textarea id="patientMessage" rows="4" placeholder="Detail any existing medical data parameters or relevant clinical back-history logs..."></textarea>
+                    </div>
+
+                    <div style="margin-top: 32px;">
+                        <button type="submit" class="btn btn-primary btn-full" style="height: 52px; font-size: 1.05rem;">Authorize Structural Manifest Token</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-bottom container text-center">
+            <p>&copy; 2026 CareConnect Ecosystem. Engine authorized by Frontend Engineer **CHALLA** for iNeuBytes Web Development Internship Track.</p>
+        </div>
+    </footer>
+
+    <script src="js/doctors.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

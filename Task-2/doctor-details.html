@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View medical background credentials and execute slot synchronization.">
+    <title>Doctor Profile | CareConnect Scheduler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="CareConnect Home">
+                <span class="logo-icon">🫀</span>
+                <span class="logo-text">Care<span>Connect</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="doctors.html" class="nav-link">Find Doctors</a>
+                <a href="index.html#departments" class="nav-link">Departments</a>
+                <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                <a href="doctors.html" class="btn btn-primary nav-cta">Book Appointment</a>
+            </div>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Error Fallback Box node out-of-bounds requests -->
+        <div id="profileErrorBlock" class="empty-state-card" style="display:none; margin: 60px 0;">
+            <h3>Target Entity Initialization Broken</h3>
+            <p>The designated doctor verification key missing or malformed inside client routing parameters.</p>
+            <a href="doctors.html" class="btn btn-primary" style="margin-top: 20px;">Return To Active Directory</a>
+        </div>
+
+        <div class="details-page-grid" id="profileMainLayout" style="display: none;">
+            
+            <!-- Left Side Image Column -->
+            <div class="profile-visual-sticky-block">
+                <div class="profile-hero-image-frame" id="renderDocGlyph"></div>
+                <div class="meta-stats-strip-panel">
+                    <div class="meta-box-unit">
+                        <span>Direct Rating</span>
+                        <strong id="renderDocRating">0.0</strong>
+                    </div>
+                    <div class="meta-box-unit">
+                        <span>Consultation Fee</span>
+                        <strong id="renderDocFee">₹0</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side Data Manifest -->
+            <div class="profile-clinical-manifest">
+                <h1 id="renderDocName">Loading Practitioner Manifest...</h1>
+                <p class="profile-department-tagline" id="renderDocSpecialization">Subspecialty Matrix</p>
+                <p class="profile-bio-text" id="renderDocBio">Narrative description profile loading...</p>
+
+                <div class="profile-block-section">
+                    <h3>Clinical Overview & Accreditations</h3>
+                    <ul class="structured-spec-list">
+                        <li><strong>Department:</strong> <span id="renderDocDept">--</span></li>
+                        <li><strong>Education:</strong> <span id="renderDocEducation">--</span></li>
+                        <li><strong>Experience:</strong> <span id="renderDocExp">--</span></li>
+                        <li><strong>Primary Facility:</strong> <span id="renderDocHospital">--</span></li>
+                        <li><strong>Languages:</strong> <span id="renderDocLanguages">--</span></li>
+                    </ul>
+                </div>
+
+                <div class="profile-block-section">
+                    <h3>Synchronized Live Schedule Grid</h3>
+                    <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px;">Select an unallocated slot below to trigger the secure booking router engine layer.</p>
+                    <div class="slots-scheduler-grid" id="renderSlotsContainer">
+                        <!-- Instantiated slots pills handled via script state loop -->
+                    </div>
+                </div>
+
+                <div style="margin-top: 40px;">
+                    <button id="triggerBookingRoutingBtn" class="btn btn-primary btn-full" disabled>Isolate Temporal Slot First</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-bottom container text-center">
+            <p>&copy; 2026 CareConnect Ecosystem. Engine authorized by Frontend Engineer **CHALLA** for iNeuBytes Web Development Internship Track.</p>
+        </div>
+    </footer>
+
+    <script src="js/doctors.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Profile Detail Parsing Strategy
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const doctorId = urlParams.get('id');
+            const targetDoc = window.careConnectDoctorsData?.find(d => d.id === doctorId);
+
+            if (!targetDoc) {
+                document.getElementById('profileErrorBlock').style.display = 'block';
+                return;
+            }
+
+            document.getElementById('profileMainLayout').style.display = 'grid';
+            
+            // Map data items to active DOM targets safely
+            document.getElementById('renderDocGlyph').textContent = targetDoc.photo;
+            document.getElementById('renderDocRating').innerHTML = `★ ${targetDoc.rating.toFixed(1)}`;
+            document.getElementById('renderDocFee').textContent = `₹${targetDoc.consultationFee}`;
+            document.getElementById('renderDocName').textContent = targetDoc.name;
+            document.getElementById('renderDocSpecialization').textContent = targetDoc.specialization;
+            document.getElementById('renderDocBio').textContent = targetDoc.bio;
+            document.getElementById('renderDocDept').textContent = targetDoc.department;
+            document.getElementById('renderDocEducation').textContent = targetDoc.education;
+            document.getElementById('renderDocExp').textContent = `${targetDoc.experience} Academic Years`;
+            document.getElementById('renderDocHospital').textContent = targetDoc.hospital;
+            document.getElementById('renderDocLanguages').textContent = targetDoc.languages.join(', ');
+
+            // Handle allocation scheduling slots logic states without framework code
+            const slotsContainer = document.getElementById('renderSlotsContainer');
+            const actionBtn = document.getElementById('triggerBookingRoutingBtn');
+            let selectedSlotToken = null;
+
+            slotsContainer.innerHTML = '';
+            targetDoc.availableSlots.forEach(slot => {
+                const pill = document.createElement('button');
+                pill.className = 'slot-option-pill btn-outline';
+                pill.style.cursor = 'pointer';
+                pill.textContent = slot;
+                
+                pill.addEventListener('click', () => {
+                    document.querySelectorAll('.slot-option-pill').forEach(p => {
+                        p.style.backgroundColor = 'var(--white)';
+                        p.style.color = 'var(--text-muted)';
+                        p.style.borderColor = '#E2E8F0';
+                    });
+                    pill.style.backgroundColor = 'rgba(16, 185, 129, 0.1)';
+                    pill.style.color = 'var(--dark-primary)';
+                    pill.style.borderColor = 'var(--primary)';
+                    
+                    selectedSlotToken = slot;
+                    actionBtn.removeAttribute('disabled');
+                    actionBtn.textContent = `Secure Booking for ${slot}`;
+                });
+
+                slotsContainer.appendChild(pill);
+            });
+
+            actionBtn.addEventListener('click', () => {
+                if (!selectedSlotToken) return;
+                // Forward routing configurations directly to booking stage tracking states
+                window.location.href = `booking.html?id=${targetDoc.id}&slot=${encodeURIComponent(selectedSlotToken)}`;
+            });
+        });
+    </script>
+</body>
+</html>

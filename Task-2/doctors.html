@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse and filter specialized medical board consultants on CareConnect directory indexes.">
+    <title>Find Doctors | CareConnect Directory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="CareConnect Home">
+                <span class="logo-icon">🫀</span>
+                <span class="logo-text">Care<span>Connect</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="doctors.html" class="nav-link active">Find Doctors</a>
+                <a href="index.html#departments" class="nav-link">Departments</a>
+                <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+                <a href="index.html#faq" class="nav-link">FAQs</a>
+                <a href="doctors.html" class="btn btn-primary nav-cta">Book Appointment</a>
+            </div>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Navigation menu">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="directory-layout-wrapper">
+            
+            <!-- Filters Sidebar panel row -->
+            <aside class="filter-sidebar-panel">
+                <div class="filter-group-header">Filter By Department</div>
+                <form id="sidebarFilterForm">
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="all" checked>
+                        <span>All Specialties</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Cardiology">
+                        <span>Cardiology</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Neurology">
+                        <span>Neurology</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Dermatology">
+                        <span>Dermatology</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Pediatrics">
+                        <span>Pediatrics</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Orthopedics">
+                        <span>Orthopedics</span>
+                    </label>
+                    <label class="radio-custom-label">
+                        <input type="radio" name="deptFilter" value="Ophthalmology">
+                        <span>Ophthalmology</span>
+                    </label>
+                </form>
+            </aside>
+
+            <!-- Main Stream Directory List -->
+            <section class="directory-main-stream">
+                <h1>Medical Specialist Directory</h1>
+                <p class="results-meta-count" id="directoryResultsCount">Analyzing records match parameters...</p>
+                
+                <!-- Live Search Box integration -->
+                <div class="search-standalone-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.637 10.637z" /></svg>
+                    <input type="text" id="directorySearchInput" placeholder="Live filter by doctor title, key specialization matrices or hospitals..." aria-label="Live filter doctors">
+                </div>
+
+                <div class="doctors-grid-dynamic" id="directoryStreamContainer">
+                    <!-- Dynamic rendering streaming blocks -->
+                </div>
+                
+                <!-- Ocurrences zero fallback matrix -->
+                <div id="directoryEmptyState" class="empty-state-card" style="display: none;">
+                    <h3>Zero Medical Manifest Matches Found</h3>
+                    <p>Modify search query keywords or filter fields to capture valid certified clinical seats.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-bottom container text-center">
+            <p>&copy; 2026 CareConnect Ecosystem. Engine authorized by Frontend Engineer **CHALLA** for iNeuBytes Web Development Internship Track.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts Integration -->
+    <script src="js/doctors.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Inline directory controller execution sandbox linkage
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof initDirectoryEngine === 'function') {
+                initDirectoryEngine();
+            }
+        });
+    </script>
+</body>
+</html>

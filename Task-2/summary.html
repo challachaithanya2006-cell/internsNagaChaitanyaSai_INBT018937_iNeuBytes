@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Extract structural confirmed medical summary ledger tokens instantly.">
+    <title>Appointment Confirmed | CareConnect Ledger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <main class="container">
+        <div class="summary-outer-layout">
+            
+            <div class="success-icon-badge">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" width="36" height="36"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
+            </div>
+
+            <h1>Allocation Manifest Confirmed</h1>
+            <p class="subtitle">Your appointment slot structural state synchronization loop completed without conflict metrics.</p>
+
+            <!-- Immutable Print-Optimized Ticket Wrapper Card -->
+            <div class="immutable-ticket-card" id="printableTicketArea">
+                <div class="ticket-header-strip">
+                    <div>
+                        <h2>CareConnect System Ticket</h2>
+                        <span style="font-size: 0.75rem; opacity: 0.85;">Client Tier Sovereign State Record</span>
+                    </div>
+                    <span class="ticket-id-tag" id="ticketIdDisplay">CC-XXXX-XXXX</span>
+                </div>
+                
+                <div class="ticket-body-content">
+                    <div class="ticket-data-grid">
+                        <div class="ticket-field-node">
+                            <span>Assigned Consultant</span>
+                            <strong id="ticketDocName">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Clinical Unit Domain</span>
+                            <strong id="ticketDept">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Patient Representative</span>
+                            <strong id="ticketPatientName">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Age / Physiological Sex</span>
+                            <strong id="ticketMetaPatient">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Chronological Date Set</span>
+                            <strong id="ticketDate">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Temporal Grid Window</span>
+                            <strong id="ticketSlot" style="color: var(--primary);">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Facility Infrastructure</span>
+                            <strong id="ticketHospital">--</strong>
+                        </div>
+                        <div class="ticket-field-node">
+                            <span>Financial Clearing Fee</span>
+                            <strong id="ticketFee">--</strong>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 24px; padding-top: 16px; border-top: 1px dashed #E2E8F0;">
+                        <span style="display:block; font-size: 0.8rem; color: var(--text-light); text-transform: uppercase; margin-bottom: 4px;">Symptom Logs</span>
+                        <p id="ticketMessage" style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.5;"></p>
+                    </div>
+                </div>
+
+                <div class="ticket-footer-disclaimer">
+                    Verification String Code Generated local-client-runtime-AES. Present this digital summary sheet artifact directly at the facility triage desk sector upon arrival.
+                </div>
+            </div>
+
+            <!-- Operational Control Action Links -->
+            <div class="summary-action-cluster">
+                <button id="downloadSummaryBtn" class="btn btn-primary">Download Summary Sheet</button>
+                <a href="doctors.html" class="btn btn-outline">Schedule Another Appointment</a>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // Extraction, parsing and localized structural handling mechanics mapping ticket nodes
+        document.addEventListener('DOMContentLoaded', () => {
+            const rawData = localStorage.getItem('careConnectActiveTicket');
+            if (!rawData) {
+                alert('No active reservation context tracks encountered inside storage sandbox variables.');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            const ticket = JSON.parse(rawData);
+
+            // Populate document field anchors safely
+            document.getElementById('ticketIdDisplay').textContent = ticket.ticketId;
+            document.getElementById('ticketDocName').textContent = ticket.doctorName;
+            document.getElementById('ticketDept').textContent = ticket.department;
+            document.getElementById('ticketPatientName').textContent = ticket.patientName;
+            document.getElementById('ticketMetaPatient').textContent = `${ticket.patientAge} Yrs / ${ticket.patientGender}`;
+            
+            // Format aesthetic chronological outputs standard view configurations
+            const dateParts = ticket.bookingDate.split('-');
+            const formattedDate = dateParts.length === 3 ? `${dateParts[2]}/${dateParts[1]}/${dateParts[0]}` : ticket.bookingDate;
+            document.getElementById('ticketDate').textContent = formattedDate;
+            
+            document.getElementById('ticketSlot').textContent = ticket.bookingSlot;
+            document.getElementById('ticketHospital').textContent = ticket.hospital;
+            document.getElementById('ticketFee').textContent = `₹${ticket.consultationFee} (Cashless Core Sync)`;
+            document.getElementById('ticketMessage').textContent = ticket.clinicalPayloadMessage;
+
+            // Trigger system hardware native layer rendering drivers for printing summary sheets
+            document.getElementById('downloadSummaryBtn').addEventListener('click', () => {
+                window.print();
+            });
+        });
+    </script>
+    
+    <!-- Injection of clean print specific CSS styles dynamically inside page rules context -->
+    <style>
+        @media print {
+            body { background: white; color: black; }
+            .main-header, .summary-action-cluster, .success-icon-badge, h1, .subtitle { display: none !important; }
+            .summary-outer-layout { margin: 0; padding: 0; max-width: 100%; }
+            .immutable-ticket-card { box-shadow: none !important; border: 1px solid #000 !important; margin: 0 !important; }
+            .ticket-header-strip { background: #000 !important; color: #fff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</body>
+</html>

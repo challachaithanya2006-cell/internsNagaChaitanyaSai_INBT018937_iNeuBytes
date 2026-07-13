@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CareConnect - Smart Doctor Appointment Booking System. Book top-rated specialist doctors instantly.">
+    <title>CareConnect | Smart Doctor Appointment Booking System</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" /></svg>
+    </button>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="index.html" class="logo" aria-label="CareConnect Home">
+                <span class="logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="24" height="24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" /></svg>
+                </span>
+                <span class="logo-text">Care<span>Connect</span></span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="doctors.html" class="nav-link">Find Doctors</a>
+                <a href="#departments" class="nav-link">Departments</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#faq" class="nav-link">FAQs</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="doctors.html" class="btn btn-primary nav-cta">Book Appointment</a>
+            </div>
+
+            <button class="mobile-menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="badge">Healthcare Infrastructure for the Future</span>
+                    <h1>Your Health, Connected. Top Specialists at Your Fingertips.</h1>
+                    <p class="hero-lead">Skip the waiting room. Find trusted healthcare professionals, view verified live availability schedules, and secure confirmed instant clinical appointments seamlessly.</p>
+                    
+                    <!-- Integrated Quick Doctor Search Bar -->
+                    <form class="hero-search-bar" action="doctors.html" method="GET">
+                        <div class="search-input-group">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.637 10.637z" /></svg>
+                            <input type="text" name="search" placeholder="Search doctors by name or keyword..." aria-label="Search doctors by name or keyword">
+                        </div>
+                        <div class="search-input-group select-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="20" height="20"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-4.204L11.25 9M2.25 9v12m18-12V9M4.5 19.5h3.375a1.125 1.125 0 011.125-1.125V14.25m-4.5 5.25v-5.25m11.25 5.25v-5.25M16.5 19.5h3.375a1.125 1.125 0 001.125-1.125V14.25" /></svg>
+                            <select name="department" aria-label="Filter by department">
+                                <option value="">All Departments</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Neurology">Neurology</option>
+                                <option value="Dermatology">Dermatology</option>
+                                <option value="Pediatrics">Pediatrics</option>
+                                <option value="Orthopedics">Orthopedics</option>
+                                <option value="Ophthalmology">Ophthalmology</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-dark-primary">Find Matches</button>
+                    </form>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <!-- Glassmorphic Dashboard UI Mockup Stack instead of plain external image assets -->
+                    <div class="glass-hero-card hero-main-card">
+                        <div class="card-header-sim">
+                            <div class="dots"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            <span class="window-title">CareConnect Core Engine v1.2</span>
+                        </div>
+                        <div class="card-body-sim">
+                            <div class="pulse-circle"></div>
+                            <h3>Active System Status</h3>
+                            <p>12 Medical Specialists Synchronized</p>
+                            <div class="mini-chart">
+                                <div class="bar" style="height: 60%"></div>
+                                <div class="bar" style="height: 85%"></div>
+                                <div class="bar" style="height: 45%"></div>
+                                <div class="bar" style="height: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-hero-card hero-sub-card floating-anim">
+                        <div class="flex-row">
+                            <div class="avatar-sim">Dr</div>
+                            <div>
+                                <h4>Dr. Alaina Vance</h4>
+                                <p>Cardiology Specialist</p>
+                            </div>
+                        </div>
+                        <span class="badge-status">Available Today</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section container reveal">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h2 class="stat-counter" data-target="99.4">0</h2>
+                    <p>Clinical Success Rate</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="stat-counter" data-target="15000">0</h2>
+                    <p>Verified Restored Patient Cases</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="stat-counter" data-target="12">0</h2>
+                    <p>Top Tier Core Medical Board Members</p>
+                </div>
+                <div class="stat-card">
+                    <h2 class="stat-counter" data-target="100">0</h2>
+                    <p>Percent Client Data Anonymization</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Departments Section -->
+        <section id="departments" class="departments-section container section-padding reveal">
+            <div class="section-header text-center">
+                <span class="sub-badge">Medical Domain Architecture</span>
+                <h2>Comprehensive Medical Sub-Specialties</h2>
+                <p>We span across specialized sectors of advanced clinical analysis to resolve intricate pathophysiological states.</p>
+            </div>
+            <div class="departments-grid">
+                <div class="dept-card">
+                    <div class="dept-icon font-cardio">🫀</div>
+                    <h3>Cardiology</h3>
+                    <p>High-precision advanced structural cardiovascular interventions and rhythmic electrophysiology diagnostics.</p>
+                </div>
+                <div class="dept-card">
+                    <div class="dept-icon font-neuro">🧠</div>
+                    <h3>Neurology</h3>
+                    <p>Comprehensive neurological care targeting complex peripheral nervous frameworks and brain pathology tracks.</p>
+                </div>
+                <div class="dept-card">
+                    <div class="dept-icon font-derm">🧬</div>
+                    <h3>Dermatology</h3>
+                    <p>Advanced diagnostic processing for highly intricate cutaneous conditions and cellular-level dermal treatment fields.</p>
+                </div>
+                <div class="dept-card">
+                    <div class="dept-icon font-peds">🧸</div>
+                    <h3>Pediatrics</h3>
+                    <p>Continuous developmental screening and precision healthcare infrastructure optimized for neonates and adolescent therapeutics.</p>
+                </div>
+                <div class="dept-card">
+                    <div class="dept-icon font-ortho">🦴</div>
+                    <h3>Orthopedics</h3>
+                    <p>Reconstructive skeletal mechanics management, structural bone configuration analysis, and full arthroscopic surgery tracks.</p>
+                </div>
+                <div class="dept-card">
+                    <div class="dept-icon font-eye">👁️</div>
+                    <h3>Ophthalmology</h3>
+                    <p>High-resolution optical laser microsurgery, vitreoretinal profiling, and custom physiological corrective lenses configuration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Doctors Section -->
+        <section class="featured-doctors container section-padding reveal">
+            <div class="section-header flex-header">
+                <div>
+                    <span class="sub-badge">Care Team Roster</span>
+                    <h2>Featured Board-Certified Specialists</h2>
+                    <p>Highly decorated medical professionals utilizing progressive treatment models across specialized units.</p>
+                </div>
+                <a href="doctors.html" class="btn btn-outline">View Entire Directory</a>
+            </div>
+            <div class="doctors-grid-dynamic" id="featuredDoctorsContainer">
+                <!-- Programmatically populated via JS -->
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works-section bg-light section-padding reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-badge">The Protocol Pipeline</span>
+                    <h2>Streamlined Appointment Processing</h2>
+                    <p>Transition from initial clinical discomfort to an optimized, completely confirmed treatment track in minutes.</p>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card-sim">
+                        <div class="step-num">01</div>
+                        <h3>Isolate Professional Profile</h3>
+                        <p>Filter across twelve certified specialist consultants by exact domain matrix, current performance rating criteria, or fee structures.</p>
+                    </div>
+                    <div class="step-card-sim">
+                        <div class="step-num">02</div>
+                        <h3>Synchronize Temporal Slot</h3>
+                        <p>Analyze authentic real-time schedule boards directly to isolate open, collision-free chronological windows matching your routine.</p>
+                    </div>
+                    <div class="step-card-sim">
+                        <div class="step-num">03</div>
+                        <h3>Acquire Immutable Confirmation</h3>
+                        <p>Fill our encrypted data payload manifest, finalize local state structures, and capture your custom structured medical ticket receipt.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose-us container section-padding reveal">
+            <div class="why-choose-grid">
+                <div class="why-content">
+                    <span class="sub-badge">Platform Integrity Matrix</span>
+                    <h2>Architected for Elite Patient Operational Continuity</h2>
+                    <p>We do not operate as an unvetted message directory layer. CareConnect implements concrete real-time structural synchronization engines mapping to medical personnel schedules.</p>
+                    <ul class="points-list">
+                        <li><strong>Cryptographic Local Sovereignty:</strong> System states persist safely localized within client runtime boundaries, minimizing global vector tracking leaks.</li>
+                        <li><strong>Frictionless Interface Traversal:</strong> Completely responsive, high-contrast structural code designed for maximum fluid navigation speeds.</li>
+                        <li><strong>Verified Clinical Accreditations:</strong> Zero unverified practitioner listings. Every single medical seat undergoes strict authentication tracks.</li>
+                    </ul>
+                </div>
+                <div class="why-visual">
+                    <div class="glass-hero-card aesthetic-metric-panel">
+                        <div class="metric-row"><span>Data Encryption Status</span><span class="status-indicator-green">AES-256 Verified</span></div>
+                        <hr class="separator">
+                        <div class="metric-row"><span>Average Pipeline Booking Time</span><strong>42 Seconds Flat</strong></div>
+                        <hr class="separator">
+                        <div class="metric-row"><span>Server Overhead Index</span><strong>0.00ms (Local State Edge)</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section bg-light section-padding reveal">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-badge">Verified Outcomes</span>
+                    <h2>Endorsements from Resolved Patients</h2>
+                    <p>Read authenticated statements detailing clinical transformations achieved using CareConnect architecture.</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"The real-time scheduler eliminated the usual multi-day administrative friction loops. Booking Dr. Vance took less than a single minute, and her specialized cardiovascular analysis protocol completely recalibrated my path."</p>
+                        <div class="client-info">
+                            <strong>Nikhil Sharma</strong>
+                            <span>Surgical Recovery Client</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="quote">"I deeply appreciate the clean visual clarity and direct focus on scheduling accuracy. Dr. Rao's neurology diagnostics are outstanding, and the summary ticket printout was processed perfectly by my corporate insurance matrix."</p>
+                        <div class="client-info">
+                            <strong>Ananya Patel</strong>
+                            <span>Enterprise Tech Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section container section-padding reveal">
+            <div class="section-header text-center">
+                <span class="sub-badge">Knowledge Retrieval Matrix</span>
+                <h2>Frequently Addressed Operational Questions</h2>
+                <p>Instant answers regarding the technical architecture, data structures, and clinical workflow logic of CareConnect.</p>
+            </div>
+            <div class="faq-accordion-wrapper">
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>How does CareConnect track scheduling collisions without a multi-tenant remote engine?</span>
+                        <span class="icon-plus"></span>
+                    </button>
+                    <div class="accordion-body">
+                        <p>CareConnect utilizes deterministic local synchronization algorithms via client-side storage frameworks. When you book a distinct operational time slot for any targeted medical practitioner, that instance updates the localized state manifest dynamically, removing the asset from the client’s real-time pool to prevent collisions.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>Are there hidden processing fees applied above the designated doctor consultation rates?</span>
+                        <span class="icon-plus"></span>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Absolutely zero. Every listed specialist maintains complete autonomy over their structural consultation billing parameters. The flat pricing rate illustrated inside the application interface maps directly to the actual clinical environment without margin additions.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header" aria-expanded="false">
+                        <span>What protocols protect my sensitive physical health data inputs?</span>
+                        <span class="icon-plus"></span>
+                    </button>
+                    <div class="accordion-body">
+                        <p>Your record details are never piped into opaque third-party cloud data farms. Information blocks captured across the booking phase persist securely inside isolated sandboxed environments under local browser client parameters, granting you immediate absolute ownership of your records matrix.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section container section-padding reveal">
+            <div class="contact-card-wrapper">
+                <div class="contact-info-side">
+                    <h2>Initiate Contact With Our Tech Core</h2>
+                    <p>Encountering localized data engine anomalies or requiring corporate enterprise configuration keys? Drop a notification packet below.</p>
+                    <div class="contact-details">
+                        <p><strong>Clinical Hub:</strong> Core Tech Sector 4, Hyderabad, IN</p>
+                        <p><strong>System Inquiries:</strong> core-gateway@careconnect.ineubytes.internal</p>
+                        <p><strong>Emergency Routing Protocol:</strong> +91 40 8829 3100</p>
+                    </div>
+                </div>
+                <div class="contact-form-side">
+                    <form id="systemContactForm" onsubmit="event.preventDefault(); alert('Message transmission layer simulated successfully. Your tracking ticket has been verified.'); this.reset();">
+                        <div class="form-row-sim">
+                            <div class="input-container">
+                                <label for="contactName">Identifier Name</label>
+                                <input type="text" id="contactName" required placeholder="Ex: Rahul">
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="contactEmail">Routing Email Address</label>
+                            <input type="email" id="contactEmail" required placeholder="rahul@domain.com">
+                        </div>
+                        <div class="input-container">
+                            <label for="contactMessage">Message Payload Data</label>
+                            <textarea id="contactMessage" rows="4" required placeholder="Detail specific clinical framework routing anomalies..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Transmit Packet</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">🫀</span>
+                    <span class="logo-text">Care<span>Connect</span></span>
+                </div>
+                <p>Next-generation client-tier decentralized scheduling gateway engineered for the iNeuBytes Frontend Web Architecture Track.</p>
+            </div>
+            <div>
+                <h4>System Architecture</h4>
+                <ul class="footer-links">
+                    <li><a href="doctors.html">Directory Indexes</a></li>
+                    <li><a href="#departments">Sub-Specialties</a></li>
+                    <li><a href="#how-it-works">Pipeline Engine</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Compliance & Sovereignty</h4>
+                <ul class="footer-links">
+                    <li><a href="#faq">Local Sandbox Policy</a></li>
+                    <li><a href="#faq">Zero-Cloud Integrity</a></li>
+                    <li><a href="#faq">Accessibility Manifest</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container text-center">
+            <p>&copy; 2026 CareConnect Ecosystem. Engine authorized by Frontend Engineer **CHALLA** for iNeuBytes Web Development Internship Track. Absolute Client Autonomy Preserved.</p>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="js/doctors.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
